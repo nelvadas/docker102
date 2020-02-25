@@ -6,3 +6,5 @@ It covers the following topics:
 *  [Installing JFrog Artifactory Docker Container Registry](./labs/01-install-registry.md)
 *  [Docker Build for Java Application ](./labs/02-BuildJavaProject.md)
 *  [Multistage Builds ](./labs/labs/03-MultiStageBuildJavaProject.md)
+
+Enjoy!
