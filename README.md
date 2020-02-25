@@ -1,8 +1,8 @@
-# Kubernetes 101
+# Docker 102
 
-Ce document présente un ensemble d'exercices à réaliser afin de valider les preréquis Docker nécessaire à l'utilisation de Kubernetes.
+This training is designed for people with basic Docker knowledge
+It covers the following topics:
 
-
-*  Installtion Docker 
-*  Architecture Docker
-*  Commandes Docker
+*  [Installing JFrog Artifactory Docker Container Registry](./labs/01-install-registry.md)
+*  [Docker Build for Java Application ](./labs/02-BuildJavaProject.md)
+*  [Multistage Builds ](./labs/labs/03-MultiStageBuildJavaProject.md)
