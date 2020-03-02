@@ -7,4 +7,12 @@ It covers the following topics:
 *  [Docker Build for Java Application ](./labs/02-BuildJavaProject.md)
 *  [Multistage Builds ](./labs/03-MultiStageBuildJavaProject.md)
 
+
+
+# Kubernetes 101
+
+*  [Kubernetes Intro ](./labs/04-KubernetesIntro.md)
+*  [Deploy Greeting app to Kubernetes](./labs/05-DeployToKubernetes.md)
+*  [Create a Helm Chart](./labs/06-CreateHelmChart.md)
+
 Enjoy!

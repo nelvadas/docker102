@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+  name: {{ include "greeting.name" . }}
+spec:
+  externalTrafficPolicy: Cluster
+  ports:
+  - protocol: TCP 
+   {{- if contains "NodePort" .Values.service.type  }}
+    nodePort: {{ .Values.service.nodePort }}
+   {{- end }} 
+    port: {{ .Values.service.port }}
+    targetPort: {{ .Values.service.targetPort }}
+  selector:
+    {{- include "greeting.selectorLabels" . | nindent 8 }}
+  sessionAffinity: None
+  type: {{ .Values.service.type }}

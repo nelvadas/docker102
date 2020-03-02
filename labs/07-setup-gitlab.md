@@ -1,11 +1,16 @@
-# Set up a Docker Registry with JFrog Artifactory 
+# Set up a Docker Gitlab instance 
 
 1. Start an JCR(JFrog Container Registry) instance
  ``` 
- docker run --name artifactory \
- -d -p 8081:8081 \
- -v /Users/Shared/Artifactory:/var/opt/jfrog/artifactory \
- docker.bintray.io/jfrog/artifactory-jcr:latest
+ docker run --detach \
+  --hostname gitlab.example.com \
+  --publish 443:443 --publish 80:80 --publish 22:22 \
+  --name gitlab \
+  --restart always \
+  --volume /Users/Shared/Gitlab/config:/etc/gitlab:Z \
+  --volume /Users/Shared/Gitlab/logs:/var/log/gitlab:Z \
+  --volume /Users/Shared/Gitlab/data:/var/opt/gitlab:Z \
+  gitlab/gitlab-ce:latest
  
  ```
 
