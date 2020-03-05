@@ -15,4 +15,9 @@ It covers the following topics:
 *  [Deploy Greeting app to Kubernetes](./labs/05-DeployToKubernetes.md)
 *  [Create a Helm Chart](./labs/06-CreateHelmChart.md)
 
+
+# Gitlab CICD 101
+
+*  [Build Greeting with Gitlab CI ](./labs/07-setup-gitlab-ci.md)
+
 Enjoy!
